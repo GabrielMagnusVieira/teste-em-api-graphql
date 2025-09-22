@@ -81,6 +81,6 @@ describe('Contratos - Categoria', () => {
             console.log('🧹 Cleanup de contrato simulado');
             return;
         }
-        // Cleanup real seria aqui
+        
     });
 });
