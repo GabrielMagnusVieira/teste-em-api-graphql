@@ -1,0 +1,20 @@
+{
+  "name": "pactum-graphql",
+  "version": "1.0.0",
+  "description": "Testes de API GraphQL com PactumJS - Modo Demonstração",
+  "scripts": {
+    "test": "cross-env MOCK_MODE=true mocha ./test/**/*.test.js --timeout 10000 --reporter spec",
+    "test:demo": "cross-env MOCK_MODE=true mocha ./test/**/*.test.js --timeout 5000",
+    "test:real": "cross-env MOCK_MODE=false mocha ./test/**/*.test.js --timeout 15000",
+    "test:categories": "cross-env MOCK_MODE=true mocha ./test/graphql/categories/*.test.js --timeout 5000",
+    "test:products": "cross-env MOCK_MODE=true mocha ./test/graphql/products/*.test.js --timeout 5000",
+    "test:contracts": "cross-env MOCK_MODE=true mocha ./test/graphql/contracts/*.test.js --timeout 5000",
+    "test:auth": "mocha ./test/graphql/auth/*.test.js --timeout 5000"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3",
+    "joi": "^17.9.2",
+    "mocha": "^10.2.0",
+    "pactum": "^3.8.0"
+  }
+}
